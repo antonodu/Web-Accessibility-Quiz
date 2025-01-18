@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5F5 ;
+    font-family: "Raleway", serif;
+}
+
+.intro p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.button {
+display: flex;
+justify-content: center;
+position: relative;
+bottom: 180px;
+}
+
+.button a {
+display: flex;
+background: green;
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 5px;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-weight: 300;
+  }
+
+h1 {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.question-container {
+    margin-bottom: 20px;
+  }
+
+  #question-box {
+    position: relative;
+    padding: 30px;
+    background: #0051A8;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 90px;
+
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.option {
+    display: inline-flex;
+    flex: 1 1 calc(40% - 10px);
+    padding: 20px;
+    background: #004C9E;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #00407A
+}
+
+.option.selected {
+    background: #007BFF;
+    color: white;
+    border: 2px solid #0056b3;
+}
+
+.option.correct {
+  background: #28a745; /* Green for correct */
+  color: #fff;
+  border: 2px solid #1e7e34;
+}
+
+.option.incorrect {
+  background: #dc3545; /* Red for incorrect */
+  color: #fff;
+  border: 2px solid #b21f2d;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#next-button:hover {
+  background: #218838;;
+}
+
+  
+  #submit-btn {
+    padding: 10px 20px;
+    margin-top: 30px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background: #218838;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+
